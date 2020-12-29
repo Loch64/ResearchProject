@@ -8,6 +8,7 @@ import rebound
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+import itertools as it
 
 #Haumea
 lowerValueXHaumea = -4.599717797858857e+01 - 1.91381851e-04
@@ -137,47 +138,30 @@ for i,time in enumerate(times):
     neptuneXYZ[i,0] = particles[8].x
     neptuneXYZ[i,1] = particles[8].y
     neptuneXYZ[i,2] = particles[8].z
-    for j,orbit in enumerate(sim.calculate_orbits()): #since there are no switch case in python, nested if-else is used
-        if j==9:
-            clone1OrbitData[counterClone1,0] = orbit.a
-            clone1OrbitData[counterClone1,1] = orbit.inc
-            clone1OrbitData[counterClone1,2] = orbit.e
-            counterClone1 += 1
-        elif j==10:
-            clone2OrbitData[counterClone2,0] = orbit.a
-            clone2OrbitData[counterClone2,1] = orbit.inc
-            clone2OrbitData[counterClone2,2] = orbit.e
-            counterClone2 += 1
-        elif j==11:
-            clone3OrbitData[counterClone3,0] = orbit.a
-            clone3OrbitData[counterClone3,1] = orbit.inc
-            clone3OrbitData[counterClone3,2] = orbit.e
-            counterClone3 += 1
-        elif j==12:
-            clone4OrbitData[counterClone4,0] = orbit.a
-            clone4OrbitData[counterClone4,1] = orbit.inc
-            clone4OrbitData[counterClone4,2] = orbit.e
-            counterClone4 += 1
-        elif j==13:
-            clone5OrbitData[counterClone5,0] = orbit.a
-            clone5OrbitData[counterClone5,1] = orbit.inc
-            clone5OrbitData[counterClone5,2] = orbit.e
-            counterClone5 += 1
-        elif j==14:
-            clone6OrbitData[counterClone6,0] = orbit.a
-            clone6OrbitData[counterClone6,1] = orbit.inc
-            clone6OrbitData[counterClone6,2] = orbit.e
-            counterClone6 += 1
-        elif j==15:
-            clone7OrbitData[counterClone7,0] = orbit.a
-            clone7OrbitData[counterClone7,1] = orbit.inc
-            clone7OrbitData[counterClone7,2] = orbit.e
-            counterClone7 += 1
-        elif j==16:
-            clone8OrbitData[counterClone8,0] = orbit.a
-            clone8OrbitData[counterClone8,1] = orbit.inc
-            clone8OrbitData[counterClone8,2] = orbit.e
-            counterClone8 += 1
+    clone1OrbitData[i,0] = sim.particles[10].calculate_orbit().a
+    clone1OrbitData[i,1] = sim.particles[10].calculate_orbit().inc
+    clone1OrbitData[i,2] = sim.particles[10].calculate_orbit().e
+    clone2OrbitData[i,0] = sim.particles[11].calculate_orbit().a
+    clone2OrbitData[i,1] = sim.particles[11].calculate_orbit().inc
+    clone2OrbitData[i,2] = sim.particles[11].calculate_orbit().e
+    clone3OrbitData[i,0] = sim.particles[12].calculate_orbit().a
+    clone3OrbitData[i,1] = sim.particles[12].calculate_orbit().inc
+    clone3OrbitData[i,2] = sim.particles[12].calculate_orbit().e
+    clone4OrbitData[i,0] = sim.particles[13].calculate_orbit().a
+    clone4OrbitData[i,1] = sim.particles[13].calculate_orbit().inc
+    clone4OrbitData[i,2] = sim.particles[13].calculate_orbit().e
+    clone5OrbitData[i,0] = sim.particles[14].calculate_orbit().a
+    clone5OrbitData[i,1] = sim.particles[14].calculate_orbit().inc
+    clone5OrbitData[i,2] = sim.particles[14].calculate_orbit().e
+    clone6OrbitData[i,0] = sim.particles[15].calculate_orbit().a
+    clone6OrbitData[i,1] = sim.particles[15].calculate_orbit().inc
+    clone6OrbitData[i,2] = sim.particles[15].calculate_orbit().e
+    clone7OrbitData[i,0] = sim.particles[16].calculate_orbit().a
+    clone7OrbitData[i,1] = sim.particles[16].calculate_orbit().inc
+    clone7OrbitData[i,2] = sim.particles[16].calculate_orbit().e
+    clone8OrbitData[i,0] = sim.particles[17].calculate_orbit().a
+    clone8OrbitData[i,1] = sim.particles[17].calculate_orbit().inc
+    clone8OrbitData[i,2] = sim.particles[17].calculate_orbit().e
         
     
 Haumea1 = np.zeros(nOutputs*6).reshape(nOutputs, 6)
