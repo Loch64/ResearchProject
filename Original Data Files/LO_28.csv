@@ -1,0 +1,105 @@
+*******************************************************************************
+JPL/HORIZONS                     (2014 LO28)               2020-Dec-02 15:49:22
+Rec #:50256869 (+COV) Soln.date: 2020-Oct-22_12:34:03    # obs: 184 (2010-2020)
+ 
+IAU76/J2000 helio. ecliptic osc. elements (au, days, deg., period=Julian yrs):
+ 
+  EPOCH=  2457550.5 ! 2016-Jun-11.00 (TDB)         Residual RMS= .11021
+   EC= .1160209702342547   QR= 37.82984477514766   TP= 2473418.7690840382
+   OM= 287.2234274519053   W=  108.304037327874    IN= 25.60526019583671
+   A= 42.79495723464456    MA= 304.1343655646861   ADIST= 47.76006969414146
+   PER= 279.96072          N= .003520588           ANGMOM= .111772483
+   DAN= 43.81542           DDN= 40.73463           L= 37.3675253
+   B= 24.2238234           MOID= 36.92610168       TP= 2059-Nov-21.2690840382
+ 
+Asteroid physical parameters (km, seconds, rotational period in hours):
+   GM= n.a.                RAD= n.a.               ROTPER= n.a.
+   H= 5.3                  G= .150                 B-V= n.a.
+                           ALBEDO= n.a.            STYP= n.a.
+ 
+ASTEROID comments: 
+1: soln ref.= JPL#13, OCC=2
+2: source=ORB
+*******************************************************************************
+ 
+ 
+*******************************************************************************
+Ephemeris / WWW_USER Wed Dec  2 15:49:22 2020 Pasadena, USA      / Horizons
+*******************************************************************************
+Target body name: (2014 LO28)                     {source: JPL#13}
+Center body name: Solar System Barycenter (0)     {source: DE431}
+Center-site name: BODY CENTER
+*******************************************************************************
+Start time      : A.D. 2000-Jan-01 00:00:00.0000 TDB
+Stop  time      : A.D. 2000-Jan-01 00:00:00.5000 TDB
+Step-size       : 0 steps
+*******************************************************************************
+Center geodetic : 0.00000000,0.00000000,0.0000000 {E-lon(deg),Lat(deg),Alt(km)}
+Center cylindric: 0.00000000,0.00000000,0.0000000 {E-lon(deg),Dxy(km),Dz(km)}
+Center radii    : (undefined)                                                  
+Small perturbers: Yes                             {source: SB431-N16}
+Output units    : AU-D
+Output type     : GEOMETRIC cartesian states
+Output format   : 2x (pos. & vel. w/uncertainties: XYZ)
+Reference frame : Ecliptic of J2000.0
+*******************************************************************************
+Initial IAU76/J2000 heliocentric ecliptic osculating elements (au, days, deg.):
+  EPOCH=  2457550.5 ! 2016-Jun-11.00 (TDB)         Residual RMS= .11021        
+   EC= .1160209702342547   QR= 37.82984477514766   TP= 2473418.7690840382      
+   OM= 287.2234274519053   W=  108.304037327874    IN= 25.60526019583671       
+  Equivalent ICRF heliocentric equatorial cartesian coordinates (au, au/d):
+   X= 3.174574400043656E+01  Y=-2.500861653497767E+01  Z= 1.541895388813045E+00
+  VX= 1.053685478465865E-03 VY= 1.903801396297371E-03 VZ= 1.727524004614053E-03
+Asteroid physical parameters (km, seconds, rotational period in hours):        
+   GM= n.a.                RAD= n.a.               ROTPER= n.a.                
+   H= 5.3                  G= .150                 B-V= n.a.                   
+                           ALBEDO= n.a.            STYP= n.a.                  
+*******************************************************************************
+            JDTDB,            Calendar Date (TDB),                      X,                      Y,                      Z,                     VX,                     VY,                     VZ,             X_s,             Y_s,             Z_s,            VX_s,            VY_s,            VZ_s,
+********************************************************************************************************************************************************************************************************************************************************************************************************
+$$SOE
+2451544.500000000, A.D. 2000-Jan-01 00:00:00.0000,  2.315879353260684E+01, -3.491588722118052E+01,  5.647148023034489E+00,  1.756111933858958E-03,  1.713654978434355E-03,  1.046607086808728E-03,  2.24801222E-04,  2.46486115E-04,  7.48386379E-05,  3.27047079E-08,  3.08432127E-08,  1.26089754E-08,
+$$EOE
+********************************************************************************************************************************************************************************************************************************************************************************************************
+Coordinate system description:
+
+  Ecliptic at the standard reference epoch
+
+    Reference epoch: J2000.0
+    X-Y plane: adopted Earth orbital plane at the reference epoch
+               Note: obliquity of 84381.448 arcseconds (IAU76) wrt ICRF equator
+    X-axis   : ICRF
+    Z-axis   : perpendicular to the X-Y plane in the directional (+ or -) sense
+               of Earth's north pole at the reference epoch.
+
+  Symbol meaning [1 au= 149597870.700 km, 1 day= 86400.0 s]:
+
+    JDTDB    Julian Day Number, Barycentric Dynamical Time
+      X      X-component of position vector (au)
+      Y      Y-component of position vector (au)
+      Z      Z-component of position vector (au)
+      VX     X-component of velocity vector (au/day)                           
+      VY     Y-component of velocity vector (au/day)                           
+      VZ     Z-component of velocity vector (au/day)                           
+      X_s    X-direction 1-sigma position uncertainty (au)                     
+      Y_s    Y-direction 1-sigma position uncertainty (au)                     
+      Z_s    Z-direction 1-sigma position uncertainty (au)                     
+      VX_s   X-direction 1-sigma velocity uncertainty (au/day)                 
+      VY_s   Y-direction 1-sigma velocity uncertainty (au/day)                 
+      VZ_s   Z-direction 1-sigma velocity uncertainty (au/day)                 
+
+Geometric states/elements have no aberrations applied.
+
+
+ Computations by ...
+     Solar System Dynamics Group, Horizons On-Line Ephemeris System
+     4800 Oak Grove Drive, Jet Propulsion Laboratory
+     Pasadena, CA  91109   USA
+     Information  : https://ssd.jpl.nasa.gov/
+     Documentation: https://ssd.jpl.nasa.gov/?horizons_doc
+     Connect      : https://ssd.jpl.nasa.gov/?horizons (browser)
+                    telnet ssd.jpl.nasa.gov 6775       (command-line)
+                    e-mail command interface available
+                    Script and CGI interfaces available
+     Author       : Jon.D.Giorgini@jpl.nasa.gov
+*******************************************************************************
