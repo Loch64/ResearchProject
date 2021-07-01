@@ -1,6 +1,6 @@
 # Semester 3 HES Undergraduate Research Project: Dynamics of Small Solar System Bodies
 
-## Orbital Simulations of the Haumea Family
+_Strong text_ Orbital Simulations of the Haumea Family
 Contains the final paper of the project. 
 
 ## HES Undergraduate Scholarship Report 2020
