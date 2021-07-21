@@ -10,7 +10,7 @@ Summary report of the project endorsed by the project supervisor.
 Contains all the programs used to create simulations and analyse data from the simulations.
 
 ### Original Data Files
-Conatins the original data used for the simulations of the 18 objects.
+Contains the original data used for the simulations of the 18 objects.
 
 ### Data Files
 Contains cleaned data from simulations.
